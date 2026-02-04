@@ -124,7 +124,7 @@ def main():
    # dispatcher.add_handler(CommandHandler("help", help))
 
     # Start the Bot
-    updater.start_polling()
+    updater.start_polling(drop_pending_updates=True)
     updater.idle()
 
 if __name__ == '__main__':
